@@ -20,7 +20,7 @@ export default function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/login", {
+      const response = await fetch("http://localhost:8082/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -65,9 +65,9 @@ export default function Login() {
             {/* Form Login */}
             <form onSubmit={handleSubmit} autocomplete="off" class="sign-in-form">
               <div class="logo">
-                <img src="public\img\logo.png" alt="dashmon" />
+                <img src="./img/logo.png" alt="dashmon" />
               </div>
-              
+
               <div class="heading">
                 <h2>Selamat datang!</h2>
                 <h6>Belum punya akun?</h6>

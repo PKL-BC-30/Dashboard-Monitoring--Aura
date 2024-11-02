@@ -5,7 +5,7 @@ import "boxicons/css/boxicons.min.css";
 
 export default function Sidebar() {
   const [activeItem, setActiveItem] = createSignal<string | null>(null);
-  const navigate = useNavigate(); // Hook untuk navigasi
+  const navigate = useNavigate(); 
 
   const handleItemClick = (itemId: string) => {
     setActiveItem(itemId);
@@ -20,7 +20,7 @@ const handleLogout = async () => {
     const user_id = localStorage.getItem("user_id");
 
     if (user_id) {
-      const response = await fetch(`http://localhost:8080/logout/${user_id}`, {
+      const response = await fetch(`http://localhost:8082/logout/${user_id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

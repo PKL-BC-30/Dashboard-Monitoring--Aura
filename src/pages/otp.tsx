@@ -36,7 +36,7 @@ const OTPVerification = (props) => {
 
     const otpValue = otp().join("");
     try {
-      const response = await fetch("http://localhost:8080/verify_otp", {
+      const response = await fetch("http://localhost:8082/verify_otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

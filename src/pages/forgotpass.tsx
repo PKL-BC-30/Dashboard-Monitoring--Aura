@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/forgot_password", {
+      const response = await fetch("http://localhost:8082/forgot_password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

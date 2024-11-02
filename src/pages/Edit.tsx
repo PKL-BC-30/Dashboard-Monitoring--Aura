@@ -34,11 +34,11 @@ const EditData = () => {
       [target.name]: target.value,
     }));
   };
-
+ 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://127.0.0.1:8080/users/update`, {
+      const response = await fetch(`http://127.0.0.1:8082/users/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
