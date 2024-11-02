@@ -16,7 +16,6 @@
     { "source": "/edit/:id", "destination": "/edit/:id" },
     { "source": "/forgotpass", "destination": "/forgotpass" },
     { "source": "/otp", "destination": "/otp" },
-    { "source": "/adduser", "destination": "/adduser" },
-    { "source": "/(.*/)", "destination": "/" }
+    { "source": "/adduser", "destination": "/adduser" }
   ]
 }
