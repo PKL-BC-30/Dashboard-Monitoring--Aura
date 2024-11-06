@@ -54,7 +54,7 @@ const Dashboard = () => {
 
   const loadVerifiedUserCount = async () => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users/userverif");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/users/userverif");
       if (response.ok) {
         const data = await response.json();
         setVerifiedUserCount(data.count);
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
   const loadUserData = async () => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/users");
       if (response.ok) {
         const data = await response.json();
         setRowData(
@@ -169,7 +169,7 @@ const Dashboard = () => {
     const userToDeleteValue = userToDelete();
     if (userToDeleteValue) {
       try {
-        const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/users/delete`, {
+        const response = await fetch(`https://resilient-expression-production-69a8.up.railway.app/users/delete`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
