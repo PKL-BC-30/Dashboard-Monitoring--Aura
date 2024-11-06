@@ -40,7 +40,7 @@ const Dashboard = () => {
 
   const loadTotalUserCount = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8082/users/totaluser");
+      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users/totaluser");
       if (response.ok) {
         const data = await response.json();
         setTotalUserCount(data.count);
@@ -54,7 +54,7 @@ const Dashboard = () => {
 
   const loadVerifiedUserCount = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8082/users/userverif");
+      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users/userverif");
       if (response.ok) {
         const data = await response.json();
         setVerifiedUserCount(data.count);
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
   const loadUserData = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8082/users");
+      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users");
       if (response.ok) {
         const data = await response.json();
         setRowData(
@@ -169,7 +169,7 @@ const Dashboard = () => {
     const userToDeleteValue = userToDelete();
     if (userToDeleteValue) {
       try {
-        const response = await fetch(`http://localhost:8082/users/delete`, {
+        const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/users/delete`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

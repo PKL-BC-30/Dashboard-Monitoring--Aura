@@ -88,7 +88,7 @@ function Maps() {
     }
 
     try {
-      const response = await fetch(`http://127.0.0.1:8082/count/gender?provinsi=${provinceName}`);
+      const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/count/gender?provinsi=${provinceName}`);
       if (!response.ok) {
         throw new Error("Failed to fetch gender data");
       }

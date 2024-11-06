@@ -8,7 +8,7 @@ function ChartComponent() {
   // Fetch data dari API
   onMount(async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8080/count/gender");
+      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/count/gender");
       const users = await response.json();
 
       // Hitung jumlah laki-laki dan perempuan berdasarkan 'jenis_kelamin'

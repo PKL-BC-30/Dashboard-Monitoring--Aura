@@ -20,7 +20,7 @@ export default function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8082/login", {
+      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

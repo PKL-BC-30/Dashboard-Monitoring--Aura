@@ -20,7 +20,7 @@ const handleLogout = async () => {
     const user_id = localStorage.getItem("user_id");
 
     if (user_id) {
-      const response = await fetch(`http://localhost:8082/logout/${user_id}`, {
+      const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/logout/${user_id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
