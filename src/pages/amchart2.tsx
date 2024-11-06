@@ -10,7 +10,7 @@ const BarChart = () => {
   // Function to fetch data from backend
   const fetchData = async () => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/chart/job");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/chart/job");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }

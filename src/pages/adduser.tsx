@@ -94,7 +94,7 @@ const AddUser = () => {
 
     if (validateForm()) {
       try {
-        const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/users/register`, {
+        const response = await fetch(`https://resilient-expression-production-69a8.up.railway.app/users/register`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

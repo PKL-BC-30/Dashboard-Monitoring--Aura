@@ -40,7 +40,7 @@ const Dashboard = () => {
 
   const loadTotalUserCount = async () => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/users/totaluser");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/users/totaluser");
       if (response.ok) {
         const data = await response.json();
         setTotalUserCount(data.count);

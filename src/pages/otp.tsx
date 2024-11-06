@@ -36,7 +36,7 @@ const OTPVerification = (props) => {
 
     const otpValue = otp().join("");
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/verify_otp", {
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/verify_otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

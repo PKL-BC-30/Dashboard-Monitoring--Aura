@@ -9,7 +9,7 @@ const LineChart = () => {
 
   // Function to get data from backend and format it for the chart
   const fetchData = async () => {
-    const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/chart/umur"); // Ganti dengan URL backend
+    const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/chart/umur"); // Ganti dengan URL backend
     const data = await response.json();
 
     // Define age ranges

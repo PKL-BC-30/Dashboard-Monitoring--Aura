@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/forgot_password", {
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/forgot_password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

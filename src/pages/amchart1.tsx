@@ -18,7 +18,7 @@ const BloodTypeChart = () => {
   // Function to fetch blood type data
   const fetchBloodTypeData = async (): Promise<BloodTypeData[]> => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/chart/goldar");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/chart/goldar");
       if (response.ok) {
         const data: BloodTypeData[] = await response.json();
         console.log("Formatted data for PieChart:", data); // Debug log

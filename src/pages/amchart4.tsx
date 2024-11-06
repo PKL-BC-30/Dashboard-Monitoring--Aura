@@ -10,7 +10,7 @@ const GenderRadarChart = () => {
 
   const getDataFromBackend = async () => {
     try {
-      const response = await fetch("https://be-dashboardmonitoring-aura-production.up.railway.app/chart/gender");
+      const response = await fetch("https://resilient-expression-production-69a8.up.railway.app/chart/gender");
       const data = await response.json();
 
       const genderCount = data.reduce((acc, item) => {

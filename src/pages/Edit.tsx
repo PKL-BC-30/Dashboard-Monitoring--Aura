@@ -38,7 +38,7 @@ const EditData = () => {
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://be-dashboardmonitoring-aura-production.up.railway.app/users/update`, {
+      const response = await fetch(`https://resilient-expression-production-69a8.up.railway.app/users/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
